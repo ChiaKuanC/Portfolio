@@ -8,6 +8,9 @@
   },
   "author": "kuan",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "pug": "^2.0.3"
+  },
   "devDependencies": {}
 }
