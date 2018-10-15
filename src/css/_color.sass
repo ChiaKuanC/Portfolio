@@ -1,0 +1,17 @@
+$colors: (primary: #0776DC,
+secondary: #00B2E5,
+light: #F6F6F6,
+gray: #696969,
+bgPrimary: #28292A)
+
+@function color($colorName)
+  @return map-get($colors, $colorName)
+
+@mixin bgGradient($deg:-180deg)
+  background-image: linear-gradient($deg,
+  color(primary) 0%,
+  #008CE6 20%,
+  #00A0E8 40%,
+  color(secondary) 60%,
+  #00C2DE 80%,
+  #09D1D5 100%)

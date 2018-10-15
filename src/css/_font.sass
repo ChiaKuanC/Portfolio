@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Expletus+Sans:400,500,600,700|Muli:200,300,400,600,700,800,900')
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css)
+$fontSizeDefault: 16px
+@mixin fontSet($fs,$fw,$ls,$c:color(light))
+  font-size: $fs
+  font-weight: $fw
+  letter-spacing: $ls
+  color: $c
+*
+  +fontSet(0.95rem,400,0.12rem)
+  font-family: 'Muli',"SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC","Helvetica Neue","Helvetica","Arial", 'Noto Sans TC', sans-serif
+
+HTML
+  font-size: $fontSizeDefault
+h1, h2 
+  font-family: 'Expletus Sans',"SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC","Helvetica Neue","Helvetica","Arial", 'Noto Sans TC', cursive
+  line-height: 1.2
+h1
+  +fontSet(6.5rem,500,0.3rem)
+h2
+  +fontSet(1.5rem,500,0.2rem,color(primary))
+h3
+  +fontSet(0.95rem,800,0.13rem)
+h4
+  +fontSet(1.25rem,300,0.15rem,color(secondary))
+a
+  color: color(secondary)
