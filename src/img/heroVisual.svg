@@ -1,0 +1,20 @@
+<svg width="403px" height="484px" viewBox="0 0 403 484" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient x1="50%" y1="0.625954281%" x2="50%" y2="100%" id="linearGradient-1">
+      <stop stop-color="#0776DC" offset="0.0418526786%"></stop>
+      <stop stop-color="#008CE6" offset="20.0334821%"></stop>
+      <stop stop-color="#00A0E8" offset="40.0251116%"></stop>
+      <stop stop-color="#00B2E5" offset="60.0167411%"></stop>
+      <stop stop-color="#00C2DE" offset="80.0083705%"></stop>
+      <stop stop-color="#09D1D5" offset="100%"></stop>
+    </linearGradient>
+  </defs>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Desktop-HD" transform="translate(-986.000000, -497.000000)" fill="url(#linearGradient-1)">
+      <g id="Keyvisual" transform="translate(55.000000, 0.000000)">
+        <path d="M1093.5119,978.828541 C1214.66199,1000.01413 1334,862.935656 1334,709.220948 C1334,555.50624 1233.85854,497 1126.5133,497 C1019.16805,497 900.690066,575.026085 938.03013,709.220948 C975.370194,843.415811 972.361817,957.642956 1093.5119,978.828541 Z"
+          id="Visualeffect-Main"></path>
+      </g>
+    </g>
+  </g>
+</svg>

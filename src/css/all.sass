@@ -11,6 +11,7 @@
 
 *
   box-sizing: border-box
+  position: relative
 html
   background-color: color(bgPrimary)
 
@@ -27,5 +28,31 @@ header
 
 body>div
   +Editing
-  width: 1200px
+  +size(100%,100vh)
+  max-width: 1200px
+  min-height: 900px
+  max-height: 100vw
   margin: 0 auto
+
+.hero
+  padding: 100px 0 0
+  h1
+    
+    margin: 100px 15px
+  .intro
+    
+    width: calc(50% - 15px)
+    position: absolute
+    bottom: 0
+    right: 15px
+    margin: 50px 0 150px
+    padding: 15px
+    &:before
+      
+      content: " "
+      +size(403px,484px)
+      position: absolute
+      left: 50%
+      bottom: -70%
+      background-image: url(/src/img/heroVisual.svg)
+
