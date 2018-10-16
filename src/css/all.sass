@@ -6,10 +6,26 @@
   width: $w
   height: $h
 
-html, body
+@mixin Editing
+  border: 1px solid #fff
+
+*
+  box-sizing: border-box
+html
   background-color: color(bgPrimary)
 
+body
+  background-image: url(/src/img/heroImg.jpg)
+  background-position: center 0
+  background-repeat: no-repeat
 header
-  position: absolute
+  padding: 50px
   top: 0
-  
+  width: 100%
+  nav
+    margin: 0 auto
+
+body>div
+  +Editing
+  width: 1200px
+  margin: 0 auto

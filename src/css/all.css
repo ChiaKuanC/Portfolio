@@ -230,12 +230,34 @@ a {
   color: #00B2E5;
 }
 
-html, body {
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
   background-color: #28292A;
 }
 
+body {
+  background-image: url(/src/img/heroImg.jpg);
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+
 header {
-  position: absolute;
+  padding: 50px;
   top: 0;
+  width: 100%;
+}
+
+header nav {
+  margin: 0 auto;
+}
+
+body > div {
+  border: 1px solid #fff;
+  width: 1200px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=all.css.map */
