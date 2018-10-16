@@ -5,10 +5,14 @@
 @mixin size($w,$h)
   width: $w
   height: $h
-
+@mixin allCenter
+  display: flex
+  align-items: center
+  justify-content: center
 @mixin Editing
   border: 1px solid #fff
 
+@import iconBtn
 *
   box-sizing: border-box
   position: relative
@@ -26,33 +30,96 @@ header
   nav
     margin: 0 auto
 
-body>div
+body>section
   +Editing
-  +size(100%,100vh)
+  +size(100%,80vh)
   max-width: 1200px
-  min-height: 900px
-  max-height: 100vw
-  margin: 0 auto
+  min-height: 750px
+  max-height: 1100px
+  margin: 0 auto 50px
+  padding: 50px
 
 .hero
   padding: 100px 0 0
   h1
-    
-    margin: 100px 15px
+    margin: 100px 7.5px
+    padding: 7.5px
+    z-index: 2
   .intro
-    
     width: calc(50% - 15px)
     position: absolute
     bottom: 0
-    right: 15px
+    right: 7.5px
     margin: 50px 0 150px
-    padding: 15px
+    padding: 0 7.5px
     &:before
-      
       content: " "
       +size(403px,484px)
       position: absolute
       left: 50%
-      bottom: -70%
+      bottom: -150px
       background-image: url(/src/img/heroVisual.svg)
-
+      z-index: 0
+    p
+      margin: 0 auto 35px
+  .nextBtn
+    position: absolute
+    +size(0,0)
+    right: 90px
+    bottom: -110px
+.portfolio
+  h2
+    margin: 25px 7.5px 50px
+  .work
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: center
+    align-items: center
+    &>div
+      width: 50%
+      margin: 0 7.5px
+    .workPicFrame
+      +allCenter
+      padding: 25px 0 75px
+  .workpic
+    object-fit: cover
+    &:before
+      position: absolute
+      top: 50px
+      right: 50px
+      content: " "
+      +bgGradient($deg:-180deg)
+      border-radius: 5px
+    img
+      +size(inherit,inherit)
+      border-radius: 5px
+      box-shadow: 0 25px 26px -20px rgba(0,0,0,0.5)
+  .workDescribe
+    padding: 0 15px
+    h3
+      margin: 0 auto 8px
+    h4
+      margin: 0 auto
+    p
+      margin: 0 auto
+    br
+      margin: 8px
+    ul
+      margin: 0
+      padding: 0
+    li
+      margin: 2px auto
+    span
+      margin-right: 5px
+    a
+      margin: 0 auto
+  .nextBtn
+    display: block
+    border-top: 15px solid color(primary)
+    margin: 80px auto
+.exchangeCalc
+  .workpic
+    +size(500px,371.52px)
+    &:before
+      +size(500px,371.52px)

@@ -28,8 +28,7 @@ html(lang="zh-Hant-TW")
                       use(xlink:href='#path-1')
                     use#MainLogo(fill='#7F7F7F', xlink:href='#path-1')
                     polygon#StandardGradient(fill='url(#linearGradient-3)', mask='url(#mask-2)', points='-7.95382166 0 168.621019 0 168.621019 35.5009664 -7.95382166 35.5009664')
-
-  .hero
+  section.hero
     h1 Learning and Enjoying Everything
     .intro
       p
@@ -40,33 +39,37 @@ html(lang="zh-Hant-TW")
         |And here is my portfolio website. :)
       .keyVisual
         span.nextBtn
-  .portfolio
+  section.portfolio
     h2 Portfolio
-    .work
-      .workPic
+    .work.exchangeCalc
+      .workPicFrame
+        .workpic
+          img(src="src/img/ExchangeCalc.jpg", alt="", srcset="")
       .workDescribe
         h3 project:
         h4 Exchangerate Calculator
+        br
         h3 Detail:
         p
           |Enter all your currency deals.
           |The app will show the current rate and count exchange rate difference automatically.
+        br
         h3 Design tool / Language:
         ul
           li
-            span UI:
+            span UI: 
             |Sketch
           li
-            span Code Editor:
+            span Code Editor: 
             |VS Code
           li
-            span Language:
+            span Language: 
             |HTML / SASS / JS / jQuery
+        br
         h3 API resource:
-        a(href="")
-          p openexchangerates.org
+        a(href="") openexchangerates.org
     span.nextBtn
-  .process
+  section.process
     h2 Process
     .workList
       .work
@@ -91,7 +94,7 @@ html(lang="zh-Hant-TW")
         h3 Project Type:
         p Logo, Business card
     span.nextBtn
-  .personal
+  section.personal
     .resume
       h2 Resume
       .selfie
