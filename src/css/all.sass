@@ -9,6 +9,10 @@
   display: flex
   align-items: center
   justify-content: center
+@mixin flexRow
+  display: flex
+  flex-direction: row
+  justify-content: center
 @mixin Editing
   border: 1px solid #fff
 
@@ -67,14 +71,10 @@ body>section
     +size(0,0)
     right: 90px
     bottom: -110px
+    border-top: 15px solid color(light)
 .portfolio
-  h2
-    margin: 25px 7.5px 50px
   .work
-    display: flex
-    flex-direction: row
-    flex-wrap: nowrap
-    justify-content: center
+    +flexRow
     align-items: center
     &>div
       width: 50%
@@ -116,10 +116,26 @@ body>section
       margin: 0 auto
   .nextBtn
     display: block
-    border-top: 15px solid color(primary)
     margin: 80px auto
 .exchangeCalc
   .workpic
     +size(500px,371.52px)
     &:before
       +size(500px,371.52px)
+
+.cases
+  .workList
+    +flexRow
+  .work
+    +Editing
+    width: calc(100%/3)
+    margin: 10px 7.5px
+    padding: 15px
+  .workImg
+    +size(100%,260px)
+    border-radius: 5px
+    overflow: hidden
+    box-shadow: 0 25px 26px -20px rgba(0,0,0,0.50)
+  .nextBtn
+    display: block
+    margin: 50px auto
