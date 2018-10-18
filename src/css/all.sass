@@ -22,6 +22,8 @@
   position: relative
 html
   background-color: color(bgPrimary)
+  width: 100%
+  overflow-x: hidden
 
 body
   background-image: url(/src/img/heroImg.jpg)
@@ -33,13 +35,30 @@ header
   width: 100%
   nav
     margin: 0 auto
-
+footer
+  +size(100%,60px)
+  +bgGradient($deg:-90deg)
+  &>div
+    margin: 0 auto
+    width: 1200px
+    +flexRow
+    &>div
+      width: calc(50% - 15px)
+      margin: 0 7.5px
+      padding: 0 15px
+  .logo
+    +size(100px,21px)
+    margin: 20px 0 16px
+  .mailIcon
+    +size(20px,14px)
+    display: block
+  a.mail
+    color: color(light)
 body>section
   +Editing
-  +size(100%,80vh)
+  +size(100%,auto)
   max-width: 1200px
   min-height: 750px
-  max-height: 1100px
   margin: 0 auto 50px
   padding: 50px 0
 
@@ -124,18 +143,57 @@ body>section
       +size(500px,371.52px)
 
 .cases
+  h4
+    margin: 0 auto 25px
   .workList
     +flexRow
   .work
-    +Editing
-    width: calc(100%/3)
+    width: calc((100%/3) - 15px)
     margin: 10px 7.5px
     padding: 15px
+    +Editing
   .workImg
     +size(100%,260px)
     border-radius: 5px
     overflow: hidden
     box-shadow: 0 25px 26px -20px rgba(0,0,0,0.50)
+    margin: 0 auto 25px
   .nextBtn
     display: block
     margin: 50px auto
+
+.personal
+  +flexRow
+  &>div
+    +Editing
+    width: calc(50% - 15px)
+    margin: 10px 7.5px
+
+.resume
+  &>div
+    +Editing
+    +flexRow
+    &>div
+      +Editing
+      width: 50%
+      padding: 0 15px
+  .selfie
+    div
+      background-image: url('/src/img/profilePhoto.png')
+      +size(239px,287px)
+      background-size: cover
+  .introduction
+    margin-top: 200px
+
+.skills
+  &>div
+    padding: 0 15px
+  .frontEnd
+    margin-bottom: 50px
+  p
+    margin: 0 0 5px
+  .skillBar
+    +size(200px,10px)
+    +bgGradient($deg:-90deg)
+    border-radius: 5px
+    margin-bottom: 18px
