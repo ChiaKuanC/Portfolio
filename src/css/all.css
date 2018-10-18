@@ -214,6 +214,9 @@ h2 {
   color: #0776DC;
   line-height: 1.4;
   margin: 25px 15px 50px;
+  background: -webkit-linear-gradient(#0776DC 0%, #008CE6 20%, #00A0E8 40%, #00B2E5 60%, #00C2DE 80%, #09D1D5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h3 {
