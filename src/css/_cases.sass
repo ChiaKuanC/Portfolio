@@ -1,0 +1,24 @@
+.cases
+  h4
+    margin: 0 auto 25px
+  .workList
+    +flexRow
+  .work
+    width: calc((100%/3) - 15px)
+    margin: 10px 7.5px
+    padding: 15px
+    +Editing
+  .workImg
+    +size(352px,260px)
+    border-radius: 5px
+    overflow: hidden
+    box-shadow: 0 25px 26px -20px rgba(0,0,0,0.50)
+    margin: 0 auto 25px
+    img
+      object-fit: cover
+      object-position: center center
+      +size(inherit,inherit)
+
+  .nextBtn
+    display: block
+    margin: 50px auto

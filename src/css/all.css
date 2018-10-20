@@ -390,7 +390,26 @@ body > section {
   border-top: 15px solid #F6F6F6;
 }
 
+.portfolio .works {
+  border: 1px solid #fff;
+  width: calc(300% + 150px);
+  height: 620px;
+  margin-left: -25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .portfolio .work {
+  width: 1200px;
+  border: 1px solid #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -404,6 +423,8 @@ body > section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 620px;
+  margin: 0 25px;
 }
 
 .portfolio .work > div {
@@ -486,7 +507,7 @@ body > section {
 
 .portfolio .nextBtn {
   display: block;
-  margin: 80px auto;
+  margin: 25px auto 50px;
 }
 
 .exchangeCalc .workpic {
@@ -524,13 +545,22 @@ body > section {
 }
 
 .cases .workImg {
-  width: 100%;
+  width: 352px;
   height: 260px;
   border-radius: 5px;
   overflow: hidden;
   -webkit-box-shadow: 0 25px 26px -20px rgba(0, 0, 0, 0.5);
           box-shadow: 0 25px 26px -20px rgba(0, 0, 0, 0.5);
   margin: 0 auto 25px;
+}
+
+.cases .workImg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  width: inherit;
+  height: inherit;
 }
 
 .cases .nextBtn {
