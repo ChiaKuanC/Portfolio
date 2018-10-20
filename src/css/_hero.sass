@@ -1,29 +1,28 @@
 .hero
-  padding: 100px 0 0
+  padding: 100px 7.5px 0
   h1
-    margin: 100px 7.5px
-    padding: 7.5px
+    margin: 80px 7.5px
     z-index: 2
   .intro
     width: calc(50% - 15px)
     position: absolute
     bottom: 0
     right: 7.5px
-    margin: 50px 0 150px
-    padding: 0 7.5px
+    margin-bottom: 120px
+    padding: 0 15px
     &:before
       content: " "
       +size(403px,484px)
       position: absolute
-      left: 50%
-      bottom: -150px
+      right: -45px
+      bottom: -140px
       background-image: url(/src/img/heroVisual.svg)
       z-index: 0
-    p
-      margin: 0 auto 35px
+  p
+    margin: 0 auto 35px
   .nextBtn
     position: absolute
     +size(0,0)
-    right: 90px
-    bottom: -110px
+    right: 150px
+    bottom: -85px
     border-top: 15px solid color(light)

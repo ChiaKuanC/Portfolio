@@ -1,16 +1,12 @@
 .portfolio
   .works
-    +Editing
-    width: calc(300% + 150px)
-    height: 620px
-    margin-left: -25px
+    +size(calc(300% + 150px), 620px)
+    margin-left: calc(-25px - (1250*2px))
     +flexRow
   .work
-    width: 1200px
-    +Editing
+    +size(1200px, 620px)
     +flexRow
     align-items: center
-    height: 620px
     margin: 0 25px
     &>div
       width: 50%
@@ -19,20 +15,24 @@
       +allCenter
       padding: 25px 0 75px
   .workpic
-    object-fit: cover
+    +size(500px,371.52px) // default size, special size at below
     &:before
+      content: " "
+      +size(inherit,inherit)
       position: absolute
       top: 50px
-      right: 50px
-      content: " "
+      right: 45px
       +bgGradient($deg:-180deg)
-      border-radius: 5px
+      border-radius: 8px
     img
+      object-fit: cover
+      object-position: center center
       +size(inherit,inherit)
       border-radius: 5px
       box-shadow: 0 25px 26px -20px rgba(0,0,0,0.5)
   .workDescribe
-    padding: 0 15px
+    padding: 40px 20px
+    border-radius: 5px
     h3
       margin: 0 auto 8px
     h4
@@ -53,8 +53,10 @@
   .nextBtn
     display: block
     margin: 25px auto 50px
-.exchangeCalc
-  .workpic
-    +size(500px,371.52px)
-    &:before
-      +size(500px,371.52px)
+  .weather
+    .workpic
+      +size(320px,520px)
+      &:before
+        +bgGradientW
+        top: 40px
+        right: 45px

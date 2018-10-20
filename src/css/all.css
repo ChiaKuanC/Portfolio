@@ -205,6 +205,7 @@ h1 {
   color: #F6F6F6;
   line-height: 1.2;
   text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.3);
+  width: 80%;
 }
 
 h2 {
@@ -213,7 +214,7 @@ h2 {
   letter-spacing: 0.2rem;
   color: #0776DC;
   line-height: 1.4;
-  margin: 25px 15px 50px;
+  margin: 25px 15px 40px;
   background: -webkit-linear-gradient(#0776DC 0%, #008CE6 20%, #00A0E8 40%, #00B2E5 60%, #00C2DE 80%, #09D1D5 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -284,7 +285,7 @@ body {
 }
 
 header {
-  padding: 50px;
+  padding: 40px 50px;
   top: 0;
   width: 100%;
 }
@@ -296,8 +297,7 @@ header nav {
 footer {
   width: 100%;
   height: 60px;
-  background-image: -webkit-gradient(linear, right top, left top, from(#0776DC), color-stop(20%, #008CE6), color-stop(40%, #00A0E8), color-stop(60%, #00B2E5), color-stop(80%, #00C2DE), to(#09D1D5));
-  background-image: linear-gradient(-90deg, #0776DC 0%, #008CE6 20%, #00A0E8 40%, #00B2E5 60%, #00C2DE 80%, #09D1D5 100%);
+  background-image: linear-gradient(-45deg, #0776DC 0%, #008CE6 20%, #00A0E8 40%, #00B2E5 60%, #00C2DE 80%, #09D1D5 100%);
 }
 
 footer > div {
@@ -324,36 +324,39 @@ footer > div > div {
 footer .logo {
   width: 100px;
   height: 21px;
-  margin: 20px 0 16px;
+  margin: 19px 0 17px;
+}
+
+footer a.mail {
+  display: block;
+  color: #F6F6F6;
+  margin: 22px 0 14px;
+  line-height: 1;
 }
 
 footer .mailIcon {
   width: 20px;
   height: 14px;
-  display: block;
-}
-
-footer a.mail {
-  color: #F6F6F6;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: bottom;
 }
 
 body > section {
-  border: 1px solid #fff;
   width: 100%;
   height: auto;
   max-width: 1200px;
   min-height: 750px;
   margin: 0 auto 50px;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .hero {
-  padding: 100px 0 0;
+  padding: 100px 7.5px 0;
 }
 
 .hero h1 {
-  margin: 100px 7.5px;
-  padding: 7.5px;
+  margin: 80px 7.5px;
   z-index: 2;
 }
 
@@ -362,8 +365,8 @@ body > section {
   position: absolute;
   bottom: 0;
   right: 7.5px;
-  margin: 50px 0 150px;
-  padding: 0 7.5px;
+  margin-bottom: 120px;
+  padding: 0 15px;
 }
 
 .hero .intro:before {
@@ -371,13 +374,13 @@ body > section {
   width: 403px;
   height: 484px;
   position: absolute;
-  left: 50%;
-  bottom: -150px;
+  right: -45px;
+  bottom: -140px;
   background-image: url(/src/img/heroVisual.svg);
   z-index: 0;
 }
 
-.hero .intro p {
+.hero p {
   margin: 0 auto 35px;
 }
 
@@ -385,16 +388,15 @@ body > section {
   position: absolute;
   width: 0;
   height: 0;
-  right: 90px;
-  bottom: -110px;
+  right: 150px;
+  bottom: -85px;
   border-top: 15px solid #F6F6F6;
 }
 
 .portfolio .works {
-  border: 1px solid #fff;
   width: calc(300% + 150px);
   height: 620px;
-  margin-left: -25px;
+  margin-left: calc(-25px - (1250*2px));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,7 +411,7 @@ body > section {
 
 .portfolio .work {
   width: 1200px;
-  border: 1px solid #fff;
+  height: 620px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,7 +425,6 @@ body > section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 620px;
   margin: 0 25px;
 }
 
@@ -446,21 +447,27 @@ body > section {
 }
 
 .portfolio .workpic {
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 500px;
+  height: 371.52px;
 }
 
 .portfolio .workpic:before {
+  content: " ";
+  width: inherit;
+  height: inherit;
   position: absolute;
   top: 50px;
-  right: 50px;
-  content: " ";
+  right: 45px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0776DC), color-stop(20%, #008CE6), color-stop(40%, #00A0E8), color-stop(60%, #00B2E5), color-stop(80%, #00C2DE), to(#09D1D5));
   background-image: linear-gradient(-180deg, #0776DC 0%, #008CE6 20%, #00A0E8 40%, #00B2E5 60%, #00C2DE 80%, #09D1D5 100%);
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .portfolio .workpic img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
   width: inherit;
   height: inherit;
   border-radius: 5px;
@@ -469,7 +476,8 @@ body > section {
 }
 
 .portfolio .workDescribe {
-  padding: 0 15px;
+  padding: 40px 20px;
+  border-radius: 5px;
 }
 
 .portfolio .workDescribe h3 {
@@ -510,14 +518,16 @@ body > section {
   margin: 25px auto 50px;
 }
 
-.exchangeCalc .workpic {
-  width: 500px;
-  height: 371.52px;
+.portfolio .weather .workpic {
+  width: 320px;
+  height: 520px;
 }
 
-.exchangeCalc .workpic:before {
-  width: 500px;
-  height: 371.52px;
+.portfolio .weather .workpic:before {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E8E8E8), to(#CCCCCC));
+  background-image: linear-gradient(-180deg, #E8E8E8 0%, #CCCCCC 100%);
+  top: 40px;
+  right: 45px;
 }
 
 .cases h4 {
@@ -540,8 +550,15 @@ body > section {
 .cases .work {
   width: calc((100%/3) - 15px);
   margin: 10px 7.5px;
-  padding: 15px;
-  border: 1px solid #fff;
+  padding: 15px 15px 0;
+}
+
+.cases .work h3 {
+  margin-bottom: 10px;
+}
+
+.cases .work p {
+  margin: 10px auto 40px;
 }
 
 .cases .workImg {
@@ -551,7 +568,7 @@ body > section {
   overflow: hidden;
   -webkit-box-shadow: 0 25px 26px -20px rgba(0, 0, 0, 0.5);
           box-shadow: 0 25px 26px -20px rgba(0, 0, 0, 0.5);
-  margin: 0 auto 25px;
+  margin: 35px auto 40px;
 }
 
 .cases .workImg img {
@@ -565,7 +582,7 @@ body > section {
 
 .cases .nextBtn {
   display: block;
-  margin: 50px auto;
+  margin: 30px auto 25px;
 }
 
 .personal {
@@ -582,13 +599,23 @@ body > section {
 }
 
 .personal > div {
-  border: 1px solid #fff;
   width: calc(50% - 15px);
-  margin: 10px 7.5px;
+  margin: 0 7.5px;
+}
+
+.personal h2 {
+  margin: 25px 15px 70px;
+}
+
+.resume h3 {
+  margin: 5px 0 5px;
+}
+
+.resume p {
+  margin: 5px 0 40px;
 }
 
 .resume > div {
-  border: 1px solid #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -602,7 +629,6 @@ body > section {
 }
 
 .resume > div > div {
-  border: 1px solid #fff;
   width: 50%;
   padding: 0 15px;
 }
@@ -626,15 +652,18 @@ body > section {
   margin-bottom: 50px;
 }
 
+.skills h3 {
+  margin: 10px 0 40px;
+}
+
 .skills p {
   margin: 0 0 5px;
 }
 
 .skills .skillBar {
-  width: 200px;
+  width: 20%;
   height: 10px;
-  background-image: -webkit-gradient(linear, right top, left top, from(#0776DC), color-stop(20%, #008CE6), color-stop(40%, #00A0E8), color-stop(60%, #00B2E5), color-stop(80%, #00C2DE), to(#09D1D5));
-  background-image: linear-gradient(-90deg, #0776DC 0%, #008CE6 20%, #00A0E8 40%, #00B2E5 60%, #00C2DE 80%, #09D1D5 100%);
+  background-image: linear-gradient(-45deg, #0776DC 0%, #008CE6 20%, #00A0E8 40%, #00B2E5 60%, #00C2DE 80%, #09D1D5 100%);
   border-radius: 5px;
   margin-bottom: 18px;
 }

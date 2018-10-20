@@ -1,7 +1,9 @@
+// basic setting
 @import normalize
 @import color
 @import font
 
+// mixins that often use
 @mixin size($w,$h)
   width: $w
   height: $h
@@ -16,7 +18,10 @@
 @mixin Editing
   border: 1px solid #fff
 
+// icon and button
 @import iconBtn
+
+// Basic layout
 *
   box-sizing: border-box
   position: relative
@@ -24,20 +29,19 @@ html
   background-color: color(bgPrimary)
   width: 100%
   overflow-x: hidden
-
 body
   background-image: url(/src/img/heroImg.jpg)
   background-position: center 0
   background-repeat: no-repeat
 header
-  padding: 50px
+  padding: 40px 50px
   top: 0
   width: 100%
   nav
     margin: 0 auto
 footer
   +size(100%,60px)
-  +bgGradient($deg:-90deg)
+  +bgGradient($deg:-45deg)
   &>div
     margin: 0 auto
     width: 1200px
@@ -48,20 +52,25 @@ footer
       padding: 0 15px
   .logo
     +size(100px,21px)
-    margin: 20px 0 16px
+    margin: 19px 0 17px
+  a.mail
+    display: block
+    color: color(light)
+    margin: 22px 0 14px
+    line-height: 1
   .mailIcon
     +size(20px,14px)
-    display: block
-  a.mail
-    color: color(light)
+    display: inline-block
+    margin-right: 10px
+    vertical-align: bottom
 body>section
-  +Editing
   +size(100%,auto)
   max-width: 1200px
   min-height: 750px
   margin: 0 auto 50px
-  padding: 50px 0
+  padding: 30px 0
 
+// Section Contents
 @import hero
 @import portfolio
 @import cases
