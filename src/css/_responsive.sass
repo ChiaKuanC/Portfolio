@@ -1,0 +1,16 @@
+$max-media: 1440px
+$mid-media: 1024px
+$min-media: 620px
+
+
+@mixin laptop-width() 
+  @media all and (min-width: $mid-media) and (max-width: $max-media)
+    @content
+
+@mixin pad-width()
+  @media all and (min-width:$min-media) and (max-width: $mid-media)
+    @content
+
+@mixin phone-width()
+  @media all and (max-width: $min-media)
+    @content

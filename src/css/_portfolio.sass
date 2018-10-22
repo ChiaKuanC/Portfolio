@@ -1,21 +1,48 @@
 .portfolio
   .works
     +size(calc(300% + 150px), 620px)
-    margin-left: calc(-25px - (1250*2px))
+    margin-left: calc(-25px - (1250*0px))
     +flexRow
+    @include laptop-width
+      margin-left: calc(-25px - (1010*1px))
+    @include pad-width
+      +size(calc(300% + 150px), 580px)
+      margin-left: calc(-25px - (650*1px))
+    @include phone-width
+      +size(calc(300% + 150px), auto)
+      margin-left: calc(-25px - (370*2px))
   .work
     +size(1200px, 620px)
     +flexRow
     align-items: center
     margin: 0 25px
+    @include laptop-width
+      +size(960px, 620px)
+    @include pad-width
+      +size(600px, 580px)
+    @include phone-width
+      +size(320px, auto)
+      display: block
+      margin: 0 auto
     &>div
       width: 50%
       margin: 0 7.5px
+      @include phone-width
+        width: 100%
+        margin: 0 auto
     .workPicFrame
       +allCenter
       padding: 25px 0 75px
+      @include phone-width
+        padding: 25px 0
   .workpic
     +size(500px,371.52px) // default size, special size at below
+    @include laptop-width
+      +size(400px, calc(371.52/5*4px))
+    @include pad-width
+      +size(300px, 220px)
+    @include phone-width
+      +size(320px, 230px)
     &:before
       content: " "
       +size(inherit,inherit)
@@ -24,6 +51,15 @@
       right: 45px
       +bgGradient($deg:-180deg)
       border-radius: 8px
+      @include laptop-width
+        top: 45px
+        right: 40px
+      @include pad-width
+        top: 25px
+        right: 20px
+      @include phone-width
+        top: 20px
+        right: 18px
     img
       object-fit: cover
       object-position: center center
@@ -50,13 +86,45 @@
       margin-right: 5px
     a
       margin: 0 auto
+    @include phone-width
+      padding: 20px 20px
+      br
+        margin: 2px
+      ul
+        margin: 0
+        padding: 0
+      li
+        margin: 2px auto
+      span
+        margin-right: 5px
+      a
+        margin: 0 auto
   .nextBtn
     display: block
     margin: 25px auto 50px
+    @include laptop-width
+      margin: 20px auto 40px
+    @include phone-width
+      margin: 15px auto 30px
   .weather
     .workpic
       +size(320px,520px)
+      @include laptop-width
+        +size(256px,416px)
+      @include pad-width
+        +size(210px,340px)
+      @include phone-width
+        +size(150px,240px)
       &:before
         +bgGradientW
         top: 40px
         right: 45px
+        @include laptop-width
+          top: 36px
+          right: 42px
+        @include pad-width
+          top: 22px
+          right: 25px
+        @include phone-width
+          top: 18px
+          right: 20px

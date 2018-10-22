@@ -19,6 +19,15 @@ h1
   +fontSet(5.5rem,500,0.3rem,color(light),1.2)
   text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.3)
   width: 80%
+  @include laptop-width
+    font-size: 4.2rem
+    letter-spacing: 0.2rem
+  @include pad-width
+    font-size: 2.7rem
+    letter-spacing: 0.2rem
+  @include phone-width
+    font-size: 2.2rem
+    letter-spacing: 0.1rem
 h2
   +fontSet(1.5rem,500,0.2rem,color(primary))
   margin: 25px 15px 40px
@@ -30,6 +39,8 @@ h2
   #09D1D5 100%)
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
+  @include laptop-width
+    margin: 25px 15px 30px
 h3
   +fontSet(0.95rem,800,0.13rem)
 h4

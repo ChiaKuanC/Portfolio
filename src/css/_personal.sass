@@ -1,8 +1,16 @@
 .personal
   +flexRow
+  @include pad-width
+    display: block
+  @include phone-width
+    display: block
   &>div
     width: calc(50% - 15px)
     margin: 0 7.5px
+    @include pad-width
+      width: 100%
+    @include phone-width
+      width: 100%
   h2
     margin: 25px 15px 70px
 .resume
@@ -12,16 +20,28 @@
     margin: 5px 0 40px
   &>div
     +flexRow
+    @include phone-width
+      display: block
     &>div
       width: 50%
       padding: 0 15px
+      @include phone-width
+        width: 100%
   .selfie
     div
       background-image: url('/src/img/profilePhoto.png')
       +size(239px,287px)
       background-size: cover
+      @include laptop-width
+        +size(calc(239/5*4px),calc(287/5*4px))
+      @include phone-width
+        +size(calc(239/5*4px),calc(287/5*4px))
+        margin: 0 auto
+        padding: 0
   .introduction
     margin-top: 200px
+    @include phone-width
+    margin-top: 50px
 
 .skills
   &>div

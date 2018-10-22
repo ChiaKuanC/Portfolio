@@ -1,6 +1,7 @@
 // basic setting
 @import normalize
 @import color
+@import responsive
 @import font
 
 // mixins that often use
@@ -37,27 +38,57 @@ header
   padding: 40px 50px
   top: 0
   width: 100%
+  @include laptop-width
+    padding: 26px 35px
+  @include pad-width
+    padding: 23px 30px
+  @include phone-width
+    padding: 20px 25px
   nav
     margin: 0 auto
+  .logo>svg
+    +size(167px,36px)
+    @include laptop-width
+      +size(140px,30px)
+    @include pad-width
+      +size(140px,30px)
+    @include phone-width
+      +size(100px,25px)
 footer
   +size(100%,60px)
   +bgGradient($deg:-45deg)
+  @include phone-width
+    height: 120px
   &>div
     margin: 0 auto
     width: 1200px
     +flexRow
+    @include laptop-width
+      width: 960px
+    @include pad-width
+      width: 600px
+    @include phone-width
+      width: 320px
+      display: block
     &>div
       width: calc(50% - 15px)
       margin: 0 7.5px
       padding: 0 15px
+      @include phone-width
+        width: 100%
+        padding: 1px 15px
   .logo
     +size(100px,21px)
     margin: 19px 0 17px
+    @include phone-width
+      margin: 25px 0 10px
   a.mail
     display: block
     color: color(light)
     margin: 22px 0 14px
     line-height: 1
+    @include phone-width
+      margin: 15px 0 10px
   .mailIcon
     +size(20px,14px)
     display: inline-block
@@ -69,6 +100,21 @@ body>section
   min-height: 750px
   margin: 0 auto 50px
   padding: 30px 0
+  @include laptop-width
+    max-width: 960px
+    min-height: 680px
+    margin: 0 auto 40px
+    padding: 25px 0
+  @include pad-width
+    max-width: 600px
+    height: auto
+    min-height: 680px
+  @include phone-width
+    max-width: 320px
+    height: auto
+    min-height: 680px
+    margin: 0 auto 30px
+    padding: 20px 0
 
 // Section Contents
 @import hero

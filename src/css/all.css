@@ -208,6 +208,27 @@ h1 {
   width: 80%;
 }
 
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  h1 {
+    font-size: 4.2rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+@media all and (min-width: 620px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2.7rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+@media all and (max-width: 620px) {
+  h1 {
+    font-size: 2.2rem;
+    letter-spacing: 0.1rem;
+  }
+}
+
 h2 {
   font-size: 1.5rem;
   font-weight: 500;
@@ -218,6 +239,12 @@ h2 {
   background: -webkit-linear-gradient(#0776DC 0%, #008CE6 20%, #00A0E8 40%, #00B2E5 60%, #00C2DE 80%, #09D1D5 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  h2 {
+    margin: 25px 15px 30px;
+  }
 }
 
 h3 {
@@ -290,14 +317,64 @@ header {
   width: 100%;
 }
 
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  header {
+    padding: 26px 35px;
+  }
+}
+
+@media all and (min-width: 620px) and (max-width: 1024px) {
+  header {
+    padding: 23px 30px;
+  }
+}
+
+@media all and (max-width: 620px) {
+  header {
+    padding: 20px 25px;
+  }
+}
+
 header nav {
   margin: 0 auto;
+}
+
+header .logo > svg {
+  width: 167px;
+  height: 36px;
+}
+
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  header .logo > svg {
+    width: 140px;
+    height: 30px;
+  }
+}
+
+@media all and (min-width: 620px) and (max-width: 1024px) {
+  header .logo > svg {
+    width: 140px;
+    height: 30px;
+  }
+}
+
+@media all and (max-width: 620px) {
+  header .logo > svg {
+    width: 100px;
+    height: 25px;
+  }
 }
 
 footer {
   width: 100%;
   height: 60px;
   background-image: linear-gradient(-45deg, #0776DC 0%, #008CE6 20%, #00A0E8 40%, #00B2E5 60%, #00C2DE 80%, #09D1D5 100%);
+}
+
+@media all and (max-width: 620px) {
+  footer {
+    height: 120px;
+  }
 }
 
 footer > div {
@@ -315,10 +392,36 @@ footer > div {
           justify-content: center;
 }
 
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  footer > div {
+    width: 960px;
+  }
+}
+
+@media all and (min-width: 620px) and (max-width: 1024px) {
+  footer > div {
+    width: 600px;
+  }
+}
+
+@media all and (max-width: 620px) {
+  footer > div {
+    width: 320px;
+    display: block;
+  }
+}
+
 footer > div > div {
   width: calc(50% - 15px);
   margin: 0 7.5px;
   padding: 0 15px;
+}
+
+@media all and (max-width: 620px) {
+  footer > div > div {
+    width: 100%;
+    padding: 1px 15px;
+  }
 }
 
 footer .logo {
@@ -327,11 +430,23 @@ footer .logo {
   margin: 19px 0 17px;
 }
 
+@media all and (max-width: 620px) {
+  footer .logo {
+    margin: 25px 0 10px;
+  }
+}
+
 footer a.mail {
   display: block;
   color: #F6F6F6;
   margin: 22px 0 14px;
   line-height: 1;
+}
+
+@media all and (max-width: 620px) {
+  footer a.mail {
+    margin: 15px 0 10px;
+  }
 }
 
 footer .mailIcon {
@@ -351,13 +466,76 @@ body > section {
   padding: 30px 0;
 }
 
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  body > section {
+    max-width: 960px;
+    min-height: 680px;
+    margin: 0 auto 40px;
+    padding: 25px 0;
+  }
+}
+
+@media all and (min-width: 620px) and (max-width: 1024px) {
+  body > section {
+    max-width: 600px;
+    height: auto;
+    min-height: 680px;
+  }
+}
+
+@media all and (max-width: 620px) {
+  body > section {
+    max-width: 320px;
+    height: auto;
+    min-height: 680px;
+    margin: 0 auto 30px;
+    padding: 20px 0;
+  }
+}
+
 .hero {
   padding: 100px 7.5px 0;
+}
+
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .hero {
+    padding: 80px 7.5px 0;
+  }
+}
+
+@media all and (min-width: 620px) and (max-width: 1024px) {
+  .hero {
+    padding: 80px 7.5px 0;
+  }
+}
+
+@media all and (max-width: 620px) {
+  .hero {
+    padding: 50px 7.5px 0;
+  }
 }
 
 .hero h1 {
   margin: 80px 7.5px;
   z-index: 2;
+}
+
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .hero h1 {
+    margin: 60px 7.5px;
+  }
+}
+
+@media all and (min-width: 620px) and (max-width: 1024px) {
+  .hero h1 {
+    margin: 60px 7.5px;
+  }
+}
+
+@media all and (max-width: 620px) {
+  .hero h1 {
+    margin: 50px 7.5px;
+  }
 }
 
 .hero .intro {
@@ -369,6 +547,25 @@ body > section {
   padding: 0 15px;
 }
 
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .hero .intro {
+    margin-bottom: 90px;
+  }
+}
+
+@media all and (min-width: 620px) and (max-width: 1024px) {
+  .hero .intro {
+    margin-bottom: 110px;
+  }
+}
+
+@media all and (max-width: 620px) {
+  .hero .intro {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+}
+
 .hero .intro:before {
   content: " ";
   width: 403px;
@@ -378,6 +575,32 @@ body > section {
   bottom: -140px;
   background-image: url(/src/img/heroVisual.svg);
   z-index: 0;
+}
+
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .hero .intro:before {
+    width: calc(403/5*4px);
+    height: calc(484/5*4px);
+    bottom: -100px;
+  }
+}
+
+@media all and (min-width: 620px) and (max-width: 1024px) {
+  .hero .intro:before {
+    width: calc(403/5*3px);
+    height: calc(484/5*3px);
+    bottom: -140px;
+    right: -60px;
+  }
+}
+
+@media all and (max-width: 620px) {
+  .hero .intro:before {
+    width: calc(403/5*3px);
+    height: calc(484/5*3px);
+    bottom: -70px;
+    right: -60px;
+  }
 }
 
 .hero p {
@@ -393,10 +616,31 @@ body > section {
   border-top: 15px solid #F6F6F6;
 }
 
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .hero .nextBtn {
+    bottom: -60px;
+    right: 110px;
+  }
+}
+
+@media all and (min-width: 620px) and (max-width: 1024px) {
+  .hero .nextBtn {
+    bottom: -110px;
+    right: 50px;
+  }
+}
+
+@media all and (max-width: 620px) {
+  .hero .nextBtn {
+    bottom: -50px;
+    right: 45px;
+  }
+}
+
 .portfolio .works {
   width: calc(300% + 150px);
   height: 620px;
-  margin-left: calc(-25px - (1250*2px));
+  margin-left: calc(-25px - (1250*0px));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,6 +651,28 @@ body > section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .portfolio .works {
+    margin-left: calc(-25px - (1010*1px));
+  }
+}
+
+@media all and (min-width: 620px) and (max-width: 1024px) {
+  .portfolio .works {
+    width: calc(300% + 150px);
+    height: 580px;
+    margin-left: calc(-25px - (650*1px));
+  }
+}
+
+@media all and (max-width: 620px) {
+  .portfolio .works {
+    width: calc(300% + 150px);
+    height: auto;
+    margin-left: calc(-25px - (370*2px));
+  }
 }
 
 .portfolio .work {
@@ -428,9 +694,39 @@ body > section {
   margin: 0 25px;
 }
 
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .portfolio .work {
+    width: 960px;
+    height: 620px;
+  }
+}
+
+@media all and (min-width: 620px) and (max-width: 1024px) {
+  .portfolio .work {
+    width: 600px;
+    height: 580px;
+  }
+}
+
+@media all and (max-width: 620px) {
+  .portfolio .work {
+    width: 320px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 .portfolio .work > div {
   width: 50%;
   margin: 0 7.5px;
+}
+
+@media all and (max-width: 620px) {
+  .portfolio .work > div {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 .portfolio .work .workPicFrame {
@@ -446,9 +742,36 @@ body > section {
   padding: 25px 0 75px;
 }
 
+@media all and (max-width: 620px) {
+  .portfolio .work .workPicFrame {
+    padding: 25px 0;
+  }
+}
+
 .portfolio .workpic {
   width: 500px;
   height: 371.52px;
+}
+
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .portfolio .workpic {
+    width: 400px;
+    height: calc(371.52/5*4px);
+  }
+}
+
+@media all and (min-width: 620px) and (max-width: 1024px) {
+  .portfolio .workpic {
+    width: 300px;
+    height: 220px;
+  }
+}
+
+@media all and (max-width: 620px) {
+  .portfolio .workpic {
+    width: 320px;
+    height: 230px;
+  }
 }
 
 .portfolio .workpic:before {
@@ -461,6 +784,27 @@ body > section {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0776DC), color-stop(20%, #008CE6), color-stop(40%, #00A0E8), color-stop(60%, #00B2E5), color-stop(80%, #00C2DE), to(#09D1D5));
   background-image: linear-gradient(-180deg, #0776DC 0%, #008CE6 20%, #00A0E8 40%, #00B2E5 60%, #00C2DE 80%, #09D1D5 100%);
   border-radius: 8px;
+}
+
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .portfolio .workpic:before {
+    top: 45px;
+    right: 40px;
+  }
+}
+
+@media all and (min-width: 620px) and (max-width: 1024px) {
+  .portfolio .workpic:before {
+    top: 25px;
+    right: 20px;
+  }
+}
+
+@media all and (max-width: 620px) {
+  .portfolio .workpic:before {
+    top: 20px;
+    right: 18px;
+  }
 }
 
 .portfolio .workpic img {
@@ -513,9 +857,43 @@ body > section {
   margin: 0 auto;
 }
 
+@media all and (max-width: 620px) {
+  .portfolio .workDescribe {
+    padding: 20px 20px;
+  }
+  .portfolio .workDescribe br {
+    margin: 2px;
+  }
+  .portfolio .workDescribe ul {
+    margin: 0;
+    padding: 0;
+  }
+  .portfolio .workDescribe li {
+    margin: 2px auto;
+  }
+  .portfolio .workDescribe span {
+    margin-right: 5px;
+  }
+  .portfolio .workDescribe a {
+    margin: 0 auto;
+  }
+}
+
 .portfolio .nextBtn {
   display: block;
   margin: 25px auto 50px;
+}
+
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .portfolio .nextBtn {
+    margin: 20px auto 40px;
+  }
+}
+
+@media all and (max-width: 620px) {
+  .portfolio .nextBtn {
+    margin: 15px auto 30px;
+  }
 }
 
 .portfolio .weather .workpic {
@@ -523,11 +901,53 @@ body > section {
   height: 520px;
 }
 
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .portfolio .weather .workpic {
+    width: 256px;
+    height: 416px;
+  }
+}
+
+@media all and (min-width: 620px) and (max-width: 1024px) {
+  .portfolio .weather .workpic {
+    width: 210px;
+    height: 340px;
+  }
+}
+
+@media all and (max-width: 620px) {
+  .portfolio .weather .workpic {
+    width: 150px;
+    height: 240px;
+  }
+}
+
 .portfolio .weather .workpic:before {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#E8E8E8), to(#CCCCCC));
   background-image: linear-gradient(-180deg, #E8E8E8 0%, #CCCCCC 100%);
   top: 40px;
   right: 45px;
+}
+
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .portfolio .weather .workpic:before {
+    top: 36px;
+    right: 42px;
+  }
+}
+
+@media all and (min-width: 620px) and (max-width: 1024px) {
+  .portfolio .weather .workpic:before {
+    top: 22px;
+    right: 25px;
+  }
+}
+
+@media all and (max-width: 620px) {
+  .portfolio .weather .workpic:before {
+    top: 18px;
+    right: 20px;
+  }
 }
 
 .cases h4 {
@@ -547,10 +967,34 @@ body > section {
           justify-content: center;
 }
 
+@media all and (min-width: 620px) and (max-width: 1024px) {
+  .cases .workList {
+    display: block;
+  }
+}
+
+@media all and (max-width: 620px) {
+  .cases .workList {
+    display: block;
+  }
+}
+
 .cases .work {
   width: calc((100%/3) - 15px);
   margin: 10px 7.5px;
   padding: 15px 15px 0;
+}
+
+@media all and (min-width: 620px) and (max-width: 1024px) {
+  .cases .work {
+    margin-bottom: 40px;
+  }
+}
+
+@media all and (max-width: 620px) {
+  .cases .work {
+    margin: 10px auto 40px;
+  }
 }
 
 .cases .work h3 {
@@ -561,6 +1005,30 @@ body > section {
   margin: 10px auto 40px;
 }
 
+@media all and (min-width: 620px) and (max-width: 1024px) {
+  .cases .work p {
+    margin-bottom: 20px;
+  }
+}
+
+@media all and (max-width: 620px) {
+  .cases .work p {
+    margin-bottom: 20px;
+  }
+}
+
+@media all and (min-width: 620px) and (max-width: 1024px) {
+  .cases .work {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 620px) {
+  .cases .work {
+    width: 100%;
+  }
+}
+
 .cases .workImg {
   width: 352px;
   height: 260px;
@@ -569,6 +1037,29 @@ body > section {
   -webkit-box-shadow: 0 25px 26px -20px rgba(0, 0, 0, 0.5);
           box-shadow: 0 25px 26px -20px rgba(0, 0, 0, 0.5);
   margin: 35px auto 40px;
+}
+
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .cases .workImg {
+    width: 275px;
+    height: 200px;
+  }
+}
+
+@media all and (min-width: 620px) and (max-width: 1024px) {
+  .cases .workImg {
+    width: 352px;
+    height: 260px;
+    margin: 30px auto 35px 0;
+  }
+}
+
+@media all and (max-width: 620px) {
+  .cases .workImg {
+    width: 100%;
+    height: 210px;
+    margin: 30px auto 35px 0;
+  }
 }
 
 .cases .workImg img {
@@ -598,9 +1089,33 @@ body > section {
           justify-content: center;
 }
 
+@media all and (min-width: 620px) and (max-width: 1024px) {
+  .personal {
+    display: block;
+  }
+}
+
+@media all and (max-width: 620px) {
+  .personal {
+    display: block;
+  }
+}
+
 .personal > div {
   width: calc(50% - 15px);
   margin: 0 7.5px;
+}
+
+@media all and (min-width: 620px) and (max-width: 1024px) {
+  .personal > div {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 620px) {
+  .personal > div {
+    width: 100%;
+  }
 }
 
 .personal h2 {
@@ -628,9 +1143,21 @@ body > section {
           justify-content: center;
 }
 
+@media all and (max-width: 620px) {
+  .resume > div {
+    display: block;
+  }
+}
+
 .resume > div > div {
   width: 50%;
   padding: 0 15px;
+}
+
+@media all and (max-width: 620px) {
+  .resume > div > div {
+    width: 100%;
+  }
 }
 
 .resume .selfie div {
@@ -640,8 +1167,25 @@ body > section {
   background-size: cover;
 }
 
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .resume .selfie div {
+    width: calc(239/5*4px);
+    height: calc(287/5*4px);
+  }
+}
+
+@media all and (max-width: 620px) {
+  .resume .selfie div {
+    width: calc(239/5*4px);
+    height: calc(287/5*4px);
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
 .resume .introduction {
   margin-top: 200px;
+  margin-top: 50px;
 }
 
 .skills > div {

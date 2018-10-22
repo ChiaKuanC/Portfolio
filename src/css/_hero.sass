@@ -1,8 +1,20 @@
 .hero
   padding: 100px 7.5px 0
+  @include laptop-width
+    padding: 80px 7.5px 0
+  @include pad-width
+    padding: 80px 7.5px 0
+  @include phone-width
+    padding: 50px 7.5px 0
   h1
     margin: 80px 7.5px
     z-index: 2
+    @include laptop-width
+      margin: 60px 7.5px
+    @include pad-width
+      margin: 60px 7.5px
+    @include phone-width
+      margin: 50px 7.5px
   .intro
     width: calc(50% - 15px)
     position: absolute
@@ -10,6 +22,13 @@
     right: 7.5px
     margin-bottom: 120px
     padding: 0 15px
+    @include laptop-width
+      margin-bottom: 90px
+    @include pad-width
+      margin-bottom: 110px
+    @include phone-width
+      width: 100%
+      margin-bottom: 80px
     &:before
       content: " "
       +size(403px,484px)
@@ -18,6 +37,17 @@
       bottom: -140px
       background-image: url(/src/img/heroVisual.svg)
       z-index: 0
+      @include laptop-width
+        +size(calc(403/5*4px),calc(484/5*4px))
+        bottom: -100px
+      @include pad-width
+        +size(calc(403/5*3px),calc(484/5*3px))
+        bottom: -140px
+        right: -60px
+      @include phone-width
+        +size(calc(403/5*3px),calc(484/5*3px))
+        bottom: -70px
+        right: -60px
   p
     margin: 0 auto 35px
   .nextBtn
@@ -26,3 +56,12 @@
     right: 150px
     bottom: -85px
     border-top: 15px solid color(light)
+    @include laptop-width
+      bottom: -60px
+      right: 110px
+    @include pad-width
+      bottom: -110px
+      right: 50px
+    @include phone-width
+      bottom: -50px
+      right: 45px

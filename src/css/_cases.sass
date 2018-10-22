@@ -3,20 +3,44 @@
     margin: 0 auto 25px
   .workList
     +flexRow
+    @include pad-width
+      display: block 
+    @include phone-width
+      display: block 
   .work
     width: calc((100%/3) - 15px)
     margin: 10px 7.5px
     padding: 15px 15px 0
+    @include pad-width
+      margin-bottom: 40px
+    @include phone-width
+      margin: 10px auto 40px
     h3
       margin-bottom: 10px
     p
       margin: 10px auto 40px
+      @include pad-width
+        margin-bottom: 20px
+      @include phone-width
+        margin-bottom: 20px
+    @include pad-width
+      width: 100%
+    @include phone-width
+      width: 100%
   .workImg
     +size(352px,260px)
     border-radius: 5px
     overflow: hidden
     box-shadow: 0 25px 26px -20px rgba(0,0,0,0.50)
     margin: 35px auto 40px
+    @include laptop-width
+      +size(275px,200px)
+    @include pad-width
+      +size(352px,260px)
+      margin: 30px auto 35px 0
+    @include phone-width
+      +size(100%,210px)
+      margin: 30px auto 35px 0
     img
       object-fit: cover
       object-position: center center
