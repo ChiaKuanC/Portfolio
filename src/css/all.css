@@ -306,7 +306,7 @@ html {
 }
 
 body {
-  background-image: url("/src/img/heroImg.jpg");
+  background-image: url("../img/heroImg.jpg");
   background-position: center 0;
   background-repeat: no-repeat;
 }
@@ -573,7 +573,7 @@ body > section {
   position: absolute;
   right: -45px;
   bottom: -140px;
-  background-image: url("/src/img/heroVisual.svg");
+  background-image: url("../img/heroVisual.svg");
   z-index: 0;
 }
 
@@ -1161,7 +1161,7 @@ body > section {
 }
 
 .resume .selfie div {
-  background-image: url("/src/img/profilePhoto.png");
+  background-image: url("../img/profilePhoto.png");
   width: 239px;
   height: 287px;
   background-size: cover;
