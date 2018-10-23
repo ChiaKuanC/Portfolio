@@ -297,7 +297,6 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
-  border: 1px solid #fff;
 }
 
 html {
