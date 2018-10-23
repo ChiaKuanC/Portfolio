@@ -313,6 +313,25 @@ body {
   overflow-x: hidden;
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  body {
+    background-size: 480px 636px;
+  }
+}
+
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
+  body {
+    background-size: 360px 477px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  body {
+    background-position: right 0;
+    background-size: 240px 318px;
+  }
+}
+
 header {
   padding: 40px 50px;
   top: 0;

@@ -36,6 +36,13 @@ body
   background-repeat: no-repeat
   width: 100%
   overflow-x: hidden
+  @include laptop-width 
+    background-size: 480px 636px
+  @include pad-width 
+    background-size: 360px 477px
+  @include phone-width 
+    background-position: right 0
+    background-size: 240px 318px
 header
   padding: 40px 50px
   top: 0

@@ -1,5 +1,6 @@
 node_modules
 _exports
 _assets
+_assets/images
 ui-design
 *.tmp
