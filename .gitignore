@@ -1,5 +1,5 @@
 node_modules
-*.tmp
 _exports
 _assets
 ui-design
+*.tmp
