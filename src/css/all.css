@@ -208,21 +208,21 @@ h1 {
   width: 80%;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   h1 {
     font-size: 4.2rem;
     letter-spacing: 0.2rem;
   }
 }
 
-@media all and (min-width: 620px) and (max-width: 1024px) {
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
   h1 {
     font-size: 2.7rem;
     letter-spacing: 0.2rem;
   }
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   h1 {
     font-size: 2.2rem;
     letter-spacing: 0.1rem;
@@ -241,7 +241,7 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   h2 {
     margin: 25px 15px 30px;
   }
@@ -297,11 +297,12 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
+  border: 1px solid #fff;
 }
 
 html {
   background-color: #28292A;
-  width: 100%;
+  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -309,6 +310,8 @@ body {
   background-image: url("../img/heroImg.jpg");
   background-position: center 0;
   background-repeat: no-repeat;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 header {
@@ -317,19 +320,19 @@ header {
   width: 100%;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   header {
     padding: 26px 35px;
   }
 }
 
-@media all and (min-width: 620px) and (max-width: 1024px) {
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
   header {
     padding: 23px 30px;
   }
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   header {
     padding: 20px 25px;
   }
@@ -344,21 +347,21 @@ header .logo > svg {
   height: 36px;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   header .logo > svg {
     width: 140px;
     height: 30px;
   }
 }
 
-@media all and (min-width: 620px) and (max-width: 1024px) {
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
   header .logo > svg {
     width: 140px;
     height: 30px;
   }
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   header .logo > svg {
     width: 100px;
     height: 25px;
@@ -371,7 +374,7 @@ footer {
   background-image: linear-gradient(-45deg, #0776DC 0%, #008CE6 20%, #00A0E8 40%, #00B2E5 60%, #00C2DE 80%, #09D1D5 100%);
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   footer {
     height: 120px;
   }
@@ -392,19 +395,19 @@ footer > div {
           justify-content: center;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   footer > div {
     width: 960px;
   }
 }
 
-@media all and (min-width: 620px) and (max-width: 1024px) {
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
   footer > div {
     width: 600px;
   }
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   footer > div {
     width: 320px;
     display: block;
@@ -417,7 +420,7 @@ footer > div > div {
   padding: 0 15px;
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   footer > div > div {
     width: 100%;
     padding: 1px 15px;
@@ -430,7 +433,7 @@ footer .logo {
   margin: 19px 0 17px;
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   footer .logo {
     margin: 25px 0 10px;
   }
@@ -443,7 +446,7 @@ footer a.mail {
   line-height: 1;
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   footer a.mail {
     margin: 15px 0 10px;
   }
@@ -466,7 +469,7 @@ body > section {
   padding: 30px 0;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   body > section {
     max-width: 960px;
     min-height: 680px;
@@ -475,7 +478,7 @@ body > section {
   }
 }
 
-@media all and (min-width: 620px) and (max-width: 1024px) {
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
   body > section {
     max-width: 600px;
     height: auto;
@@ -483,7 +486,7 @@ body > section {
   }
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   body > section {
     max-width: 320px;
     height: auto;
@@ -497,19 +500,19 @@ body > section {
   padding: 100px 7.5px 0;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .hero {
     padding: 80px 7.5px 0;
   }
 }
 
-@media all and (min-width: 620px) and (max-width: 1024px) {
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
   .hero {
     padding: 80px 7.5px 0;
   }
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .hero {
     padding: 50px 7.5px 0;
   }
@@ -520,19 +523,19 @@ body > section {
   z-index: 2;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .hero h1 {
     margin: 60px 7.5px;
   }
 }
 
-@media all and (min-width: 620px) and (max-width: 1024px) {
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
   .hero h1 {
     margin: 60px 7.5px;
   }
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .hero h1 {
     margin: 50px 7.5px;
   }
@@ -547,19 +550,19 @@ body > section {
   padding: 0 15px;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .hero .intro {
     margin-bottom: 90px;
   }
 }
 
-@media all and (min-width: 620px) and (max-width: 1024px) {
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
   .hero .intro {
     margin-bottom: 110px;
   }
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .hero .intro {
     width: 100%;
     margin-bottom: 80px;
@@ -577,7 +580,7 @@ body > section {
   z-index: 0;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .hero .intro:before {
     width: calc(403/5*4px);
     height: calc(484/5*4px);
@@ -585,7 +588,7 @@ body > section {
   }
 }
 
-@media all and (min-width: 620px) and (max-width: 1024px) {
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
   .hero .intro:before {
     width: calc(403/5*3px);
     height: calc(484/5*3px);
@@ -594,7 +597,7 @@ body > section {
   }
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .hero .intro:before {
     width: calc(403/5*3px);
     height: calc(484/5*3px);
@@ -616,21 +619,21 @@ body > section {
   border-top: 15px solid #F6F6F6;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .hero .nextBtn {
     bottom: -60px;
     right: 110px;
   }
 }
 
-@media all and (min-width: 620px) and (max-width: 1024px) {
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
   .hero .nextBtn {
     bottom: -110px;
     right: 50px;
   }
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .hero .nextBtn {
     bottom: -50px;
     right: 45px;
@@ -653,13 +656,13 @@ body > section {
           justify-content: center;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .portfolio .works {
     margin-left: calc(-25px - (1010*1px));
   }
 }
 
-@media all and (min-width: 620px) and (max-width: 1024px) {
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
   .portfolio .works {
     width: calc(300% + 150px);
     height: 580px;
@@ -667,7 +670,7 @@ body > section {
   }
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .portfolio .works {
     width: calc(300% + 150px);
     height: auto;
@@ -694,21 +697,21 @@ body > section {
   margin: 0 25px;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .portfolio .work {
     width: 960px;
     height: 620px;
   }
 }
 
-@media all and (min-width: 620px) and (max-width: 1024px) {
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
   .portfolio .work {
     width: 600px;
     height: 580px;
   }
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .portfolio .work {
     width: 320px;
     height: auto;
@@ -722,7 +725,7 @@ body > section {
   margin: 0 7.5px;
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .portfolio .work > div {
     width: 100%;
     margin: 0 auto;
@@ -742,7 +745,7 @@ body > section {
   padding: 25px 0 75px;
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .portfolio .work .workPicFrame {
     padding: 25px 0;
   }
@@ -753,21 +756,21 @@ body > section {
   height: 371.52px;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .portfolio .workpic {
     width: 400px;
     height: calc(371.52/5*4px);
   }
 }
 
-@media all and (min-width: 620px) and (max-width: 1024px) {
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
   .portfolio .workpic {
     width: 300px;
     height: 220px;
   }
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .portfolio .workpic {
     width: 320px;
     height: 230px;
@@ -786,21 +789,21 @@ body > section {
   border-radius: 8px;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .portfolio .workpic:before {
     top: 45px;
     right: 40px;
   }
 }
 
-@media all and (min-width: 620px) and (max-width: 1024px) {
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
   .portfolio .workpic:before {
     top: 25px;
     right: 20px;
   }
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .portfolio .workpic:before {
     top: 20px;
     right: 18px;
@@ -857,7 +860,7 @@ body > section {
   margin: 0 auto;
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .portfolio .workDescribe {
     padding: 20px 20px;
   }
@@ -884,13 +887,13 @@ body > section {
   margin: 25px auto 50px;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .portfolio .nextBtn {
     margin: 20px auto 40px;
   }
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .portfolio .nextBtn {
     margin: 15px auto 30px;
   }
@@ -901,21 +904,21 @@ body > section {
   height: 520px;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .portfolio .weather .workpic {
     width: 256px;
     height: 416px;
   }
 }
 
-@media all and (min-width: 620px) and (max-width: 1024px) {
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
   .portfolio .weather .workpic {
     width: 210px;
     height: 340px;
   }
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .portfolio .weather .workpic {
     width: 150px;
     height: 240px;
@@ -929,21 +932,21 @@ body > section {
   right: 45px;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .portfolio .weather .workpic:before {
     top: 36px;
     right: 42px;
   }
 }
 
-@media all and (min-width: 620px) and (max-width: 1024px) {
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
   .portfolio .weather .workpic:before {
     top: 22px;
     right: 25px;
   }
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .portfolio .weather .workpic:before {
     top: 18px;
     right: 20px;
@@ -967,13 +970,13 @@ body > section {
           justify-content: center;
 }
 
-@media all and (min-width: 620px) and (max-width: 1024px) {
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
   .cases .workList {
     display: block;
   }
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .cases .workList {
     display: block;
   }
@@ -985,13 +988,13 @@ body > section {
   padding: 15px 15px 0;
 }
 
-@media all and (min-width: 620px) and (max-width: 1024px) {
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
   .cases .work {
     margin-bottom: 40px;
   }
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .cases .work {
     margin: 10px auto 40px;
   }
@@ -1005,25 +1008,25 @@ body > section {
   margin: 10px auto 40px;
 }
 
-@media all and (min-width: 620px) and (max-width: 1024px) {
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
   .cases .work p {
     margin-bottom: 20px;
   }
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .cases .work p {
     margin-bottom: 20px;
   }
 }
 
-@media all and (min-width: 620px) and (max-width: 1024px) {
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
   .cases .work {
     width: 100%;
   }
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .cases .work {
     width: 100%;
   }
@@ -1039,14 +1042,14 @@ body > section {
   margin: 35px auto 40px;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .cases .workImg {
     width: 275px;
     height: 200px;
   }
 }
 
-@media all and (min-width: 620px) and (max-width: 1024px) {
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
   .cases .workImg {
     width: 352px;
     height: 260px;
@@ -1054,7 +1057,7 @@ body > section {
   }
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .cases .workImg {
     width: 100%;
     height: 210px;
@@ -1089,13 +1092,13 @@ body > section {
           justify-content: center;
 }
 
-@media all and (min-width: 620px) and (max-width: 1024px) {
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
   .personal {
     display: block;
   }
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .personal {
     display: block;
   }
@@ -1106,13 +1109,13 @@ body > section {
   margin: 0 7.5px;
 }
 
-@media all and (min-width: 620px) and (max-width: 1024px) {
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
   .personal > div {
     width: 100%;
   }
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .personal > div {
     width: 100%;
   }
@@ -1143,7 +1146,7 @@ body > section {
           justify-content: center;
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .resume > div {
     display: block;
   }
@@ -1154,7 +1157,7 @@ body > section {
   padding: 0 15px;
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .resume > div > div {
     width: 100%;
   }
@@ -1167,14 +1170,14 @@ body > section {
   background-size: cover;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .resume .selfie div {
     width: calc(239/5*4px);
     height: calc(287/5*4px);
   }
 }
 
-@media all and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .resume .selfie div {
     width: calc(239/5*4px);
     height: calc(287/5*4px);

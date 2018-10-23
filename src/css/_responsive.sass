@@ -4,13 +4,13 @@ $min-media: 620px
 
 
 @mixin laptop-width() 
-  @media all and (min-width: $mid-media) and (max-width: $max-media)
+  @media only screen and (min-width: $mid-media) and (max-width: $max-media)
     @content
 
 @mixin pad-width()
-  @media all and (min-width:$min-media) and (max-width: $mid-media)
+  @media only screen and (min-width:$min-media) and (max-width: $mid-media)
     @content
 
 @mixin phone-width()
-  @media all and (max-width: $min-media)
+  @media only screen and (max-width: $min-media)
     @content
