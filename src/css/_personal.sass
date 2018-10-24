@@ -11,13 +11,18 @@
       width: 100%
     @include phone-width
       width: 100%
+      margin: 0 7.5px 80px
   h2
     margin: 25px 15px 70px
+    @include phone-width
+      margin: 25px 15px 30px
 .resume
   h3
     margin: 5px 0 5px
   p
     margin: 5px 0 40px
+    @include phone-width
+      margin: 5px 0 25px
   &>div
     +flexRow
     @include phone-width
@@ -41,7 +46,7 @@
   .introduction
     margin-top: 200px
     @include phone-width
-    margin-top: 50px
+      margin-top: 50px
 
 .skills
   &>div
@@ -50,6 +55,8 @@
     margin-bottom: 50px
   h3
     margin: 10px 0 40px
+    @include phone-width
+      margin: 10px 0 25px
   p
     margin: 0 0 5px
   .skillBar

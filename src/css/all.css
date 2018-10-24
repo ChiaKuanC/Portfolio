@@ -1154,11 +1154,18 @@ body > section {
 @media only screen and (max-width: 620px) {
   .personal > div {
     width: 100%;
+    margin: 0 7.5px 80px;
   }
 }
 
 .personal h2 {
   margin: 25px 15px 70px;
+}
+
+@media only screen and (max-width: 620px) {
+  .personal h2 {
+    margin: 25px 15px 30px;
+  }
 }
 
 .resume h3 {
@@ -1167,6 +1174,12 @@ body > section {
 
 .resume p {
   margin: 5px 0 40px;
+}
+
+@media only screen and (max-width: 620px) {
+  .resume p {
+    margin: 5px 0 25px;
+  }
 }
 
 .resume > div {
@@ -1224,7 +1237,12 @@ body > section {
 
 .resume .introduction {
   margin-top: 200px;
-  margin-top: 50px;
+}
+
+@media only screen and (max-width: 620px) {
+  .resume .introduction {
+    margin-top: 50px;
+  }
 }
 
 .skills > div {
@@ -1237,6 +1255,12 @@ body > section {
 
 .skills h3 {
   margin: 10px 0 40px;
+}
+
+@media only screen and (max-width: 620px) {
+  .skills h3 {
+    margin: 10px 0 25px;
+  }
 }
 
 .skills p {
