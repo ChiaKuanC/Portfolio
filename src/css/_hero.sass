@@ -5,7 +5,7 @@
   @include pad-width
     padding: 80px 7.5px 0
   @include phone-width
-    padding: 50px 7.5px 0
+    padding: 10px 7.5px 0
   h1
     margin: 80px 7.5px
     z-index: 2
@@ -14,7 +14,7 @@
     @include pad-width
       margin: 60px 7.5px
     @include phone-width
-      margin: 50px 7.5px
+      margin: 40px 15px
   .intro
     width: calc(50% - 15px)
     position: absolute
@@ -27,7 +27,9 @@
     @include pad-width
       margin-bottom: 110px
     @include phone-width
-      width: 100%
+      width: calc(100% - 15px)
+      position: relative
+      right: unset
       margin-bottom: 80px
     &:before
       content: " "
@@ -47,7 +49,7 @@
       @include phone-width
         +size(calc(403/5*3px),calc(484/5*3px))
         bottom: -70px
-        right: -60px
+        right: -80px
   p
     margin: 0 auto 35px
   .nextBtn
@@ -63,5 +65,5 @@
       bottom: -110px
       right: 50px
     @include phone-width
-      bottom: -50px
-      right: 45px
+      bottom: -5px
+      right: 25px

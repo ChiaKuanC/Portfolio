@@ -247,6 +247,18 @@ h2 {
   }
 }
 
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
+  h2 {
+    margin: 25px 15px 30px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  h2 {
+    margin: 25px 15px;
+  }
+}
+
 h3 {
   font-size: 0.95rem;
   font-weight: 800;
@@ -508,8 +520,8 @@ body > section {
   body > section {
     max-width: 320px;
     height: auto;
-    min-height: 680px;
-    margin: 0 auto 30px;
+    min-height: unset;
+    margin: 0 auto 20px;
     padding: 20px 0;
   }
 }
@@ -532,7 +544,7 @@ body > section {
 
 @media only screen and (max-width: 620px) {
   .hero {
-    padding: 50px 7.5px 0;
+    padding: 10px 7.5px 0;
   }
 }
 
@@ -555,7 +567,7 @@ body > section {
 
 @media only screen and (max-width: 620px) {
   .hero h1 {
-    margin: 50px 7.5px;
+    margin: 40px 15px;
   }
 }
 
@@ -582,7 +594,9 @@ body > section {
 
 @media only screen and (max-width: 620px) {
   .hero .intro {
-    width: 100%;
+    width: calc(100% - 15px);
+    position: relative;
+    right: unset;
     margin-bottom: 80px;
   }
 }
@@ -620,7 +634,7 @@ body > section {
     width: calc(403/5*3px);
     height: calc(484/5*3px);
     bottom: -70px;
-    right: -60px;
+    right: -80px;
   }
 }
 
@@ -653,8 +667,8 @@ body > section {
 
 @media only screen and (max-width: 620px) {
   .hero .nextBtn {
-    bottom: -50px;
-    right: 45px;
+    bottom: -5px;
+    right: 25px;
   }
 }
 
@@ -672,6 +686,9 @@ body > section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
@@ -731,7 +748,7 @@ body > section {
 
 @media only screen and (max-width: 620px) {
   .portfolio .work {
-    width: 320px;
+    width: 300px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -790,8 +807,9 @@ body > section {
 
 @media only screen and (max-width: 620px) {
   .portfolio .workpic {
-    width: 320px;
-    height: 230px;
+    width: 290px;
+    height: 210px;
+    margin-left: 5px;
   }
 }
 
@@ -823,8 +841,8 @@ body > section {
 
 @media only screen and (max-width: 620px) {
   .portfolio .workpic:before {
-    top: 20px;
-    right: 18px;
+    top: 10px;
+    right: 8px;
   }
 }
 
@@ -913,7 +931,7 @@ body > section {
 
 @media only screen and (max-width: 620px) {
   .portfolio .nextBtn {
-    margin: 15px auto 30px;
+    margin: 15px auto;
   }
 }
 
@@ -966,8 +984,8 @@ body > section {
 
 @media only screen and (max-width: 620px) {
   .portfolio .weather .workpic:before {
-    top: 18px;
-    right: 20px;
+    top: 8px;
+    right: 10px;
   }
 }
 
