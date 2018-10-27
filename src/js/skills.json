@@ -1,0 +1,58 @@
+{
+  "frontEnd": [{
+    "order": 1,
+    "name": "HTML",
+    "percent": 85
+  }, {
+    "order": 2,
+    "name": "Pug",
+    "percent": 40
+  }, {
+    "order": 3,
+    "name": "CSS",
+    "percent": 85
+  }, {
+    "order": 4,
+    "name": "SASS",
+    "percent": 55
+  }, {
+    "order": 5,
+    "name": "Javascript",
+    "percent": 60
+  }, {
+    "order": 6,
+    "name": "jQuery",
+    "percent": 70
+  }, {
+    "order": 7,
+    "name": "git",
+    "percent": 45
+  }, {
+    "order": 8,
+    "name": "React",
+    "percent": 25
+  }],
+  "designTool": [{
+      "order": 1,
+      "name": "Sketch",
+      "percent": 75
+    }, {
+      "order": 2,
+      "name": "Photoshop",
+      "percent": 80
+    }, {
+      "order": 3,
+      "name": "Illustrator",
+      "percent": 80
+    }, {
+      "order": 4,
+      "name": "XD",
+      "percent": 65
+    }, {
+      "order": 5,
+      "name": "Affinity photo & Designer",
+      "percent": 70
+    }
+
+  ]
+}
