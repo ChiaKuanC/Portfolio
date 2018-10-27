@@ -1,17 +1,14 @@
 .portfolio
   .works
     +size(calc(300% + 150px), 620px)
-    margin-left: calc(-25px - (1250*0px))
+    margin-left: -25px
     +flexRow
     align-items: center
-    @include laptop-width
-      margin-left: calc(-25px - (1010*1px))
+    transition: 3s
     @include pad-width
       +size(calc(300% + 150px), 580px)
-      margin-left: calc(-25px - (650*1px))
     @include phone-width
       +size(calc(300% + 150px), auto)
-      margin-left: calc(-25px - (370*2px))
   .work
     +size(1200px, 620px)
     +flexRow
