@@ -17,7 +17,7 @@ $(function () {
     carousel();
   }, 8000);
 
-  $.get('../../src/js/skills.json', function (data) {
+  $.get('src/js/skills.json', function (data) {
     let frontEndData = document.getElementsByTagName('b');
     for (let i = 0; i < frontEndData.length; i++) {
       let listData = frontEndData[i].innerText;
