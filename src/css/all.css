@@ -275,7 +275,7 @@ h4 {
   line-height: 1.4;
 }
 
-p, li, a, span {
+p, li, a, span, b {
   font-size: 0.88rem;
   font-weight: 300;
   letter-spacing: 0.1rem;
@@ -288,6 +288,10 @@ p, li, a, span {
 a {
   color: #00B2E5;
   text-decoration: none;
+}
+
+b {
+  margin-right: 5px;
 }
 
 @-webkit-keyframes roll {
@@ -772,8 +776,8 @@ body > section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: 3s;
-  transition: 3s;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 @media only screen and (min-width: 620px) and (max-width: 1024px) {
