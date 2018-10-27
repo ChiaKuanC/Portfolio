@@ -1,4 +1,8 @@
 $(function () {
+  setInterval(function () {
+    carousel();
+  }, 8000);
+
   function carousel() {
     let carouselWidth = $('.portfolio .works').width();
     let singleWidth = carouselWidth / 3;
@@ -13,8 +17,6 @@ $(function () {
         'margin-left': (marginLeftNow - singleWidth) + 'px'
       });
     }
-    setInterval(function () {
-      carousel()
-    }, 8000);
+
   }
 });
