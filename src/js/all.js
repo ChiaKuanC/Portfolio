@@ -17,6 +17,22 @@ $(function () {
     carousel();
   }, 8000);
 
+  $('.hero .nextBtn').on('click', function() {
+    $('html, body').animate({
+      scrollTop: $('.portfolio').offset().top
+    }, 2000);
+  }); 
+  $('.portfolio .nextBtn').on('click', function() {
+    $('html, body').animate({
+      scrollTop: $('.cases').offset().top
+    }, 2000);
+  });
+  $('.cases .nextBtn').on('click', function() {
+    $('html, body').animate({
+      scrollTop: $('.personal').offset().top
+    }, 2000);
+  });
+
   $.get('src/js/skills.json', function (data) {
     let frontEndData = document.getElementsByTagName('b');
     for (let i = 0; i < frontEndData.length; i++) {
@@ -31,5 +47,6 @@ $(function () {
         }
       }
     }
-  })
+  });
+
 });
