@@ -377,6 +377,8 @@ b {
   -webkit-filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.2));
           filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.2));
   opacity: 1;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .nextBtn:hover .mouseRoll, .nextBtn:focus .mouseRoll {
@@ -388,11 +390,31 @@ b {
   -webkit-filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.3));
           filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.3));
   opacity: 1;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .nextBtn:active .mouseRoll {
   -webkit-animation: roll 2s infinite;
           animation: roll 2s infinite;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 * {
