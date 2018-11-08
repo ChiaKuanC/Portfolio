@@ -1,21 +1,28 @@
 $(function () {
-  function carousel() {
-    let carouselWidth = $('.portfolio .works').width();
+  const carouselArea = document.querySelector(".portfolio .works");
+  const carousels = document.querySelectorAll(".portfolio .work");
+  let count = 1;
+
+  setInterval(function(){
+    carousel(carouselArea, carousels,count);
+  },10000);
+
+  function carousel(Area,Single) {
+    let carouselWidth = Area.clientWidth;
     let singleWidth = carouselWidth / 3;
-    let marginLeftNow = parseInt($('.portfolio .works').css('margin-left'));
-    if (marginLeftNow < -(singleWidth * 2 - 25)) {
-      $('.portfolio .works').css({
-        'margin-left': '-25px'
-      });
+    let carouselAmounts = Single.length;
+    if(count < carouselAmounts){
+      Area.style.transform = 'translateX('+(singleWidth*-count)+'px)';
+      count++;
     } else {
-      $('.portfolio .works').css({
-        'margin-left': (marginLeftNow - singleWidth) + 'px'
-      });
+      Area.style.transform = 'translateX('+0+'px)';
+      count = 1;
     }
   }
-  setInterval(function () {
-    carousel();
-  }, 8000);
+  window.addEventListener("resize", function() {
+    console.log("re")
+    carousel(carouselArea, carousels);
+  });
 
   $('.hero .nextBtn').on('click', function() {
     $('html, body').animate({
