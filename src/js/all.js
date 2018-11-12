@@ -54,6 +54,8 @@ $(function () {
           if (listData == jsonData) {
             console.log(barWidth)
             frontEndData[i].parentNode.parentNode.children[1].style.width = barWidth + "%";
+            frontEndData[i].parentNode.innerHTML = "<b>"+jsonData+"</b>"+ barWidth + "%";
+            frontEndData[i].parentNode.style.opacity = "1";
           }
         }, j * 100);
       }
