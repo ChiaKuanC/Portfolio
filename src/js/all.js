@@ -3,10 +3,10 @@ $(function () {
   const carousels = document.querySelectorAll(".portfolio .work");
   let count = 1;
 
-  // Check Carousel every 10s
+  // Check Carousel every 5s
   setInterval(function () {
     carousel(carouselArea, carousels, count);
-  }, 10000);
+  }, 5000);
   // Check Carousel when change windows width
   window.addEventListener("resize", function () {
     carousel(carouselArea, carousels);
@@ -43,23 +43,23 @@ $(function () {
   });
 
   // Load skill data
-  $.get('src/js/skills.json', function (data) {
-    let frontEndData = document.getElementsByTagName('b');
-    for (let i = 0; i < frontEndData.length; i++) {
-      let listData = frontEndData[i].innerText;
-      for (let j = 0; j < data.frontEnd.length; j++) {
-        setTimeout(function () {
-          let jsonData = data.frontEnd[j].name;
-          let barWidth = data.frontEnd[j].percent;
-          if (listData == jsonData) {
-            console.log(barWidth)
-            frontEndData[i].parentNode.parentNode.children[1].style.width = barWidth + "%";
-            frontEndData[i].parentNode.innerHTML = "<b>"+jsonData+"</b>"+ barWidth + "%";
-            frontEndData[i].parentNode.style.opacity = "1";
-          }
-        }, j * 100);
-      }
-    }
-  });
+  // $.get('src/js/skills.json', function (data) {
+  //   let frontEndData = document.getElementsByTagName('b');
+  //   for (let i = 0; i < frontEndData.length; i++) {
+  //     let listData = frontEndData[i].innerText;
+  //     for (let j = 0; j < data.frontEnd.length; j++) {
+  //       setTimeout(function () {
+  //         let jsonData = data.frontEnd[j].name;
+  //         let barWidth = data.frontEnd[j].percent;
+  //         if (listData == jsonData) {
+  //           console.log(barWidth)
+  //           frontEndData[i].parentNode.parentNode.children[1].style.width = barWidth + "%";
+  //           frontEndData[i].parentNode.innerHTML = "<b>"+jsonData+"</b>"+ barWidth + "%";
+  //           frontEndData[i].parentNode.style.opacity = "1";
+  //         }
+  //       }, j * 100);
+  //     }
+  //   }
+  // });
 
 });
